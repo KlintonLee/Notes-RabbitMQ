@@ -54,3 +54,17 @@ Nota: Segue o conceito de FIFO - _First In, First Out_;
 - As lazy queues garantem o ritmo dessas leituras e essas mensagens não são perdidas;
 - Exige alto consumo de Input/Output, tornando tudo mais custoso.
 - Pense sempre se realmente é necessário a utilização das lazy queues;
+
+## Docker
+Para subir o ambiente a partir do `docker-compose.yaml` deste serviço, disponibilize as portas `15672` e `5672`. Em seguida execute dentro deste repositório (caminho do docker-compose) o seguinte comando:
+```
+docker-compose up -d
+```
+Abra no browser `http://localhost:15672` e preencha o usuário e senha como `admin`
+
+### Publicando mensagem manualmente pelo Docker
+Nota: Certifique-se de ter uma fila com o nome `TestQueue`, o exemplo é baseado no docker-compose deste repositório.
+```
+docker exec -it rabbitmq bash
+rabbitmqadmin -u docker -p docker publish routing_key="TestQueue" payload="Ola Mundo!"
+```
