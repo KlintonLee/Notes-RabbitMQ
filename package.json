@@ -1,0 +1,23 @@
+{
+  "name": "notes-rabbitmq",
+  "version": "1.0.0",
+  "description": "## 📬  O que é o RabbitMQ? - O RabbitMQ é um Message Broker open-source, em outras palavras, um software de mensageria; - Ele foi desenvolvido em cima do Erlang, o que traz sua fama de ser extremamente rápido e capaz de suportar alta carga; - As mensagens caem na memória, ou seja, ainda mais rápido. - Ele tem como principal protocolo de comunicação o AMQP(_Advanced Message Queueing Protocol_)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KlintonLee/Notes-RabbitMQ.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KlintonLee/Notes-RabbitMQ/issues"
+  },
+  "homepage": "https://github.com/KlintonLee/Notes-RabbitMQ#readme",
+  "dependencies": {
+    "amqplib": "^0.8.0"
+  }
+}
